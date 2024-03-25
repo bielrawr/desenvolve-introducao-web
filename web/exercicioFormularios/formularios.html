@@ -1,0 +1,102 @@
+<!--Você deverá implementar um formulário de pesquisa de satisfação. Esse formulário é dividido em duas partes.
+
+1. Dados pessoas, onde o cliente deverá fornecer seu nome, e-mail e telefone para contato.
+2. Pesquisa, onde o cliente onde o cliente deverá responder a três perguntas. Duas delas utilizará radio buttons como
+campo de resposta, e uma utilizará menu de dropdown
+
+Antes do botão de envio, inclua um checkbox indicando se o cliente autoriza compartilhar sua respostas com terceiros.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="icons/search.ico"></link>
+    <title>Formulário de Pesquisa</title>
+</head>
+<body>
+    <!--DADOS INICIAIS-->
+    <h1>Pesquisa de Satisfação</h1>
+    <form method="post" action="pesquisa-form.html">
+        <section>
+            <h2>Dados pessoais</h2>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Seu nome completo"/>
+                
+            </p>
+            <p> <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="Seu e-mail"/>
+            </p>
+            <p>
+                <label for="telefone">Whatsapp</label>
+                <input for="tel" id="telefone" placeholder="(DDD) 9xxxx-xxxx"/>
+            </p>
+        </section>
+        <section>
+                <!--ATENDIMENTO-->
+            <h2>Dados de Pesquisa</h2>
+            <p>
+                <b>Como você avalia o atendimento prestado pela nossa equipe?</b>
+                <p>
+                    <!--5 ESTRELAS-->
+                <input type="radio" id="muitobom" name="satisfação">
+                <label for="muitobom">Muito bom</label>
+                <img src="icons/star.ico"  title="5 Estrelas">
+                <img src="icons/star.ico"  title="5 Estrelas">
+                <img src="icons/star.ico"  title="5 Estrelas">
+                <img src="icons/star.ico"  title="5 Estrelas">
+                <img src="icons/star.ico"  title="5 Estrelas">
+                    <!--4 ESTRELAS-->
+                <input type="radio" id="bom" name="satisfação">
+                <label for="bom">Bom</label>
+                <img src="icons/star.ico"  title="4 Estrelas">
+                <img src="icons/star.ico"  title="4 Estrelas">
+                <img src="icons/star.ico"  title="4 Estrelas">
+                <img src="icons/star.ico"  title="4 Estrelas">
+                    <!--3 ESTRELAS-->
+                <input type="radio" id="neutro" name="satisfação">
+                <label for="neutro">Neutro</label>
+                <img src="icons/star.ico"  title="3 Estrelas">
+                <img src="icons/star.ico"  title="3 Estrelas">
+                <img src="icons/star.ico"  title="3 Estrelas">
+
+                <input type="radio" id="ruim" name="satisfação">
+                <label for="ruim">Ruim</label>
+                <img src="icons/star.ico"  title="2 Estrelas">
+                <img src="icons/star.ico"  title="2 Estrelas">
+
+                <input type="radio" id="pessimo" name="satisfação">
+                <label for="pessimo">Péssimo</label>
+                <img src="icons/star.ico"  title="1 Estrela">
+                <br>
+                </p>
+            </p>
+                <!--PROBLEMA-->
+            <p>
+                <b>Seu problema foi resolvido?</b>
+                <p>
+                <input type="radio" id="sim" name="sim-nao">
+                <label for="sim">Sim</label>
+                <input type="radio" id="nao" name="sim-nao">
+                <label for="nao">Não</label>
+                </p>
+            </p>
+            <label for="comunicacao"><b>Caso necessário, qual o melhor período para entrarmos em contato?</b></label>
+            <p>
+                <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+                </select>
+            </p>
+            <p>
+                <input type="checkbox"id="compartilhar-dados">
+                <label for="compartilhar-dados">Autorizo o compartilhamento de dados com terceiros</label>
+            </p>
+        </section>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
