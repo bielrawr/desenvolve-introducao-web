@@ -1,0 +1,34 @@
+[data-theme="dark"] .blog-wrapper {
+  background-color: #441301 !important;
+  color: #eee;
+}
+
+[data-theme="dark"] footer {
+  background-color: #5b220d !important;
+}
+
+[data-theme="dark"] .smallp {
+  background-color: #ae5e42;
+}
+
+[data-theme="dark"] .logo {
+  background-image: none;
+}
+
+[data-theme="dark"] .header-scrolled {
+  background:#5b220d !important
+
+}
+[data-theme="dark"] .back-to-top {
+  background-color:#340f01 !important;
+}
+
+[data-theme="dark"] .row-post {
+  background-color: #994a2c !important;
+}
+
+.form-check-input {
+  color: #000;
+
+}
+
