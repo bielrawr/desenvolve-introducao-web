@@ -18,6 +18,7 @@ h6 {
   color: #ffffff;
 }
 
+
 a {
   color: #1e1e1e;
   text-decoration: none;
@@ -295,9 +296,6 @@ a:hover {
   top: 0px;
 }
 
-.fixed-top li:nth-of-type(3){
-  text-decoration: none;
-}
 
 
 #header .logo img {
@@ -345,19 +343,19 @@ a:hover {
 }
 
 .navbar a,
-.navbar a:focus {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  color: #000000;
-  font-size: 16px;
-  font-weight: 
-  padding: 0;
-  white-space: nowrap;
-  transition: 0.5s;
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
-}
+  .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600;
+    white-space: nowrap;
+    transition: 0.5s;
+    letter-spacing: 0.4px;
+    position: relative;
+    text-transform: uppercase;
+  }
 
 .navbar a i,
 .navbar a:focus i {
@@ -469,7 +467,8 @@ a:hover {
 
 @media (max-width: 991px) {
   .mobile-nav-toggle {
-    display: block;
+    display: inline-block;
+    float: right;
   }
 
   .navbar ul {
@@ -489,8 +488,8 @@ a:hover {
   z-index: 999;
 }
 
-.navbar-mobile .mobile-nav-f {
-  position: absolute;
+.navbar-mobile .mobile-nav-toggle {
+  position: relative;
   top: 15px;
   right: 15px;
 }
@@ -742,18 +741,21 @@ footer .credits span  {
 }
 
 .whatsapp {
+  width: 24px;
   height: 1.5em;
   margin-top: 0.8em;
   margin-left: 0.5em;
 }
 
 .github {
+  width: 22.4px;
   height: 1.4em;
   margin-top: 0.8em;
   margin-left: 0.5em;
 }
 
 .email{
+  width: 25.6px;
   height: 1.6em;
   margin-top: 0.7em;
   margin-left: 0.5em;
@@ -806,24 +808,40 @@ footer .credits span  {
 }
 
 /* Mobile */
-@media (max-width: 480px) { // styles
+@media (max-width: 480px) { 
+  img {
+    width: 100%;
+  }
 }
 /* Extra small devices */
-@media (min-width: 481px) and (max-width: 767px) { // styles
+@media (min-width: 481px) and (max-width: 767px) {
+  img {
+    width: 100%;
+  }
 }
 /* Small tablets */
-@media (min-width: 768px) and (max-width: 991px) { // styles
+@media (min-width: 768px) and (max-width: 991px) {
+  img {
+    width: 100%;
+  }
 }
 /* Large tablets/laptops */
 @media (min-width: 992px) and (max-width: 1199px) {
-// styles
+  img {
+    width: 100%;
+  }
 }
 /* Desktops */
-@media (min-width: 1200px) and (max-width: 1919px) { // styles
+@media (min-width: 1200px) and (max-width: 1919px) {
+  img {
+    width: 100%;
+  }
 }
 /* Extra large screens */
 @media (min-width: 1920px) {
-// styles
+  img {
+    width: 100%;
+  }
 }
 
 

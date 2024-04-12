@@ -226,6 +226,10 @@
   * Desktop Navigation 
   */
 
+.article-title {
+  display: inline-block;
+}
+
  
   
 .imgpostp a {
@@ -241,7 +245,7 @@
 .imgpost {
   margin-top: 30px;
   margin-bottom: 10px;
-  width: 600px;
+  max-width: 600px;
   margin-left: 115px;
   box-shadow: 1px 1px 4px 4px;
   border-radius: 20px;
@@ -252,8 +256,6 @@
     vertical-align: middle;
     padding: 18px;
     font-size: 0.8em;
-    margin-left: 175px;
-    margin-right: 175px;
     background-color: #e892198b;
     border-radius: 20px;
     margin-bottom: 30px;
@@ -344,7 +346,6 @@ button:active {
     color: #000000;
     font-size: 16px;
     font-weight: 600;
-    padding: 0;
     white-space: nowrap;
     transition: 0.5s;
     letter-spacing: 0.4px;
@@ -841,4 +842,43 @@ footer .credits span  {
 .form-check-input:checked {
   background-color: #000000;
   border-color: #ff721b;
+}
+
+/* Mobile */
+@media (max-width: 480px) { 
+  .imgpost {
+    width: 100%;
+    margin: 0;
+  }
+}
+/* Extra small devices */
+@media (min-width: 481px) and (max-width: 767px) { 
+  .imgpost {
+    width: 100%;
+  }
+}
+/* Small tablets */
+@media (min-width: 768px) and (max-width: 991px) {  
+  .imgpost {
+    width: 100%;
+  }
+}
+/* Large tablets/laptops */
+@media (min-width: 992px) and (max-width: 1199px) { 
+  .imgpost {
+    width: 100%;
+  }
+}
+/* Desktops */
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .imgpost {
+    width: 100%;
+  }
+}
+/* Extra large screens */
+@media (min-width: 1920px) {
+ 
+  .imgpost {
+    width: 100%;
+  }
 }
