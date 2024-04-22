@@ -1,0 +1,171 @@
+/* Color Theme Swatches in Hex
+
+.background\\u00F3n-ambientalista-1-hex { color: #204F8C; }
+.color-theme__\\u00F3n-ambientalista-2-hex { color: #3370A6; }
+.color-theme__\\u00F3n-ambientalista-3-hex { color: #4B9EBF; }
+.principal\\u00F3n-ambientalista-4-hex { color: #F2DF7E; }
+.destaque\\u00F3n-ambientalista-5-hex { color: #F2A413; } */
+
+
+/*
+1. Aplique o flexbox no rodapé da seção principal, e posicione os links de forma que fique centralizados e com espaçamento entre eles.
+
+- Defina um mesmo tamanho para os links.
+
+- Não se esqueça de tratar o caso de quebra de linha.
+
+2. Configure um layout de flexbox para a seção de benefícios da seguinte forma:
+
+- O texto deve ficar à esquerda, e o título à direita.
+
+- O título deve ficar centralizado verticalmente.
+
+- O texto deve ocupar aproximadamente 70% da largura, e o título 30%.
+
+3. Configure um layout de flexbox para a seção de participação da seguinte forma:
+
+- Cada item deve ocupar 50% do espaço disponível.
+
+- O título deverá ficar centralizado verticalmente.
+
+4. Inclua uma linha no topo e embaixo das seções de benefícios e participação, utilizando a propriedade border-bottom e border-top respectivamente.
+
+- Remova a ocorrência de borda duplicada entre as duas seções */
+
+.participation {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: #F2DF7E solid 1px;
+}
+
+.participation h3, .participation p {
+    flex-basis: 50%;
+}
+
+.participation h3 {
+    align-self: center;
+}
+
+.benefits h3 {
+    order: 2;
+    align-self: center;
+    flex-basis: 30%;
+
+}
+
+.benefits p {
+    flex-basis: 70%;
+}
+
+.benefits {
+    display: flex;
+    border-top: #F2DF7E solid 1px;
+    border-bottom: #F2DF7E solid 1px;
+
+}
+
+.supporting footer {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.explanation {
+    width: 60%;
+    margin-right: 35%;
+    border-right: #f2df7e solid 1px;
+    padding-right: 2%;
+}
+
+.page-wrapper {
+    position: relative;
+}
+
+#design-selection {
+    position: absolute;
+    top: 520px;
+    left: 65%;
+    padding-left: 1%;
+    padding-right: 1%;
+    
+
+}
+
+.page-wrapper {
+    width: 80%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+aside ul{
+    list-style-type: none;
+}
+
+aside ul li{
+    margin-top: 1em;
+    text-align: center;
+}
+
+.main footer {
+    margin: 4%;
+}
+
+a {
+    color: #4B9EBF;
+}
+
+.main footer a {
+    border: solid 2px #F2A413; 
+    padding: 0.5em;
+    display: inline-block;
+}
+
+#zen-intro {height: 550px;
+}
+
+#design-archives {display: none;
+}
+
+#zen-intro header {
+    background-color:#F2DF7E;
+    color: #204F8C;
+}
+
+#zen-intro header h1, #zen-intro header h2 {
+    display: inline-block;
+}
+    
+#zen-intro h1 {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+html {
+    background: #204F8C ;
+    color:  #F2DF7E;
+    
+    font-size: 22px;
+    font-family: "Italiana", sans-serif;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {font-size: 1.8rem;}
+h2 {font-size: 1.4rem;}
+h3 {font-size: 1.2rem;}
+
+#zen-summary {
+    text-align: center;
+}
+
+#zen-supporting p {
+    line-height: 1.5;
+}
+
+abbr {
+    font-variant-caps: small-caps;
+}
